@@ -15,7 +15,14 @@ notas parciales.
 incorrectas y en blanco, correspondientes a postulantes, y muestre su puntaje
 final considerando, que por cada respuesta correcta tendrá 4 puntos,
 respuestas incorrectas tendrá -1 y respuestas en blanco tendrá 0.
-- ...
+- Ejercicio 4
+Elaborar un algoritmo que permita ingresar el numero de partidos ganados, perdidos y empatados,
+por algun equipo en el torneo apertura, se debe de mostrar su puntaje total, teniendo en cuenta
+por cada partido ganado obtendra 3 puntos, empatado 1 punto y perdido 0 puntos.
+- Ejercicio 5
+Se requiere el algoritmo para elaborar la planilla de un empleado. Para ello se dispone de sus horas 
+laboradas en el mes, asi como de la tarifa por hora.
+...
 
 ## Cómo Contribuir
 
