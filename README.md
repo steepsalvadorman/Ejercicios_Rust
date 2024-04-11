@@ -20,6 +20,11 @@ por algun equipo en el torneo apertura, se debe de mostrar su puntaje total, ten
 por cada partido ganado obtendra 3 puntos, empatado 1 punto y perdido 0 puntos.
 - Problema 5: Se requiere el algoritmo para elaborar la planilla de un empleado. Para ello se dispone de sus horas 
 laboradas en el mes, asi como de la tarifa por hora.
+- Problema 6: Elabore un algoritmo que lea los 3 lados de un triangulo cualquiera y calcule su area, considerar:
+Si A,B y C son los lados, y S el semiperimetro.
+- Problema 7: Para hacer una copia de seguridad, de la informacion almacenada en un disco cuya capacidad
+se conoce. Considerar que el disco duro esta lleno de informacion, ademas expresado en gigabyte. Un
+CD virgen tiene 700 Megabytes de capacidad y una Gigabyte es igual a 1,024 megabyte.
 ...
 
 ## Cómo Contribuir
