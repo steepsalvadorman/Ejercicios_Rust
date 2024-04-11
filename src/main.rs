@@ -1,13 +1,15 @@
-use std::io::{self, Write};
+use std::io::Write;
+
 
 
 fn main() {
     //ejercicio1();
     //ejercicio2();
     //ejercicio3();
-    //ejercicio4()
-    //ejercicio5()
-    ejercicio6()
+    //ejercicio4();
+    //ejercicio5();
+    //ejercicio6();
+    ejercicio7()
 }
 
 /*
@@ -37,16 +39,61 @@ Ejercicio 6
 Elabore un algoritmo que lea los 3 lados de un triangulo cualquiera y calcule su area, considerar:
 Si A,B y C son los lados, y S el semiperimetro
 
+Ejercicio 7
+
+Para hacer una copia de seguridad, de la informacion almacenada en un disco cuya capacidad
+se conoce. Considerar que el disco duro esta lleno de informacion, ademas expresado en
+gigabyte. Un CD virgen tiene 700 Megabytes de capacidad y una Gigabyte es igual a 1,024 
+megabyte.
 */ 
 
+fn ejercicio7(){
+
+    let mut gigabyte = String::new();
+
+    println!("Ingresa la cantidad de Gigabyte del disco duro");
+    std::io::stdout().flush().unwrap();
+    std::io::stdin().read_line(&mut gigabyte).expect("Error al leer la cantidad de gigas");
+    let gigabyte: i32 = gigabyte.trim().parse().expect("Error al convertir gigabyte en un numero");
+    let megabyte: i32 = gigabyte * 1024;
+    println!("La cantidad de CDs que se necesita es {}", ((megabyte/700)+1));
+}
+
+
+
+
+
+/*
 fn ejercicio6(){
 
+    let mut lado_a = String::new();
+    let mut lado_b = String::new();
+    let mut lado_c = String::new();
 
+    println!("Ingresa el valor del lado A: ");
+    std::io::stdout().flush().unwrap();
+    std::io::stdin().read_line(&mut lado_a).expect("Error al leer el lado A");
+    let lado_a: f32 = lado_a.trim().parse().expect("Error al convertir lado_a a número");
+
+    println!("Ingresa el valor del lado B: ");
+    std::io::stdout().flush().unwrap();
+    std::io::stdin().read_line(&mut lado_b).expect("Error al leer el lado B");
+    let lado_b: f32 = lado_b.trim().parse().expect("Error al convertir lado_b a número");
+
+    println!("Ingresa el valor del lado C: ");
+    std::io::stdout().flush().unwrap();
+    std::io::stdin().read_line(&mut lado_c).expect("Error al leer el lado C");
+    let lado_c: f32 = lado_c.trim().parse().expect("Error al convertir lado_c a número");
+
+    let x: f32 = (lado_a + lado_b + lado_c) / 2.0;
+    let solution = (x * (x - lado_a) * (x - lado_b) * (x - lado_c)).sqrt();
+
+    println!("Su respuesta es {}", solution);
 
 
 }
 
-/*
+
 fn ejercicio5(){
 
     let mut horas_laborables = String::new();
